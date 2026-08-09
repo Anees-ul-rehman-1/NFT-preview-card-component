@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-- Add your live demo link here.
+- [Live demo](https://nft-preview-card-component-frontend-m.netlify.app/)
 
 ---
 

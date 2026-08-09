@@ -21,15 +21,11 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-
     width: fit-content;
     background-color: #14273E;
     border-radius: 10px;
     padding: 1.5rem;
-
 }
-
-
 
 .image-container{
    position: relative;
@@ -83,6 +79,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1rem;
+
+    box-shadow: 0 .5px 0 0 grey;
 }
 
 .eth {
@@ -103,6 +102,7 @@ p {
 }
 
 .profile {
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;

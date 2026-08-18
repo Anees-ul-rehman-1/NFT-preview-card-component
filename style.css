@@ -5,61 +5,55 @@
 }
 
 body {
+    font-family: sans-serif;
     background-color: #0D1A2D;
     color: white;
 }
 
-section {
+.stack {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section {
     height: 100vh;
 }
 
 .main-card-container {
-    display: flex;
+    width: min(100% - 2rem, 350px);
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: fit-content;
+    gap: clamp(1rem, 5vw, 2rem);
     background-color: #14273E;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: clamp(1rem, 5vw, 1.5rem);
 }
 
-.image-container{
-   position: relative;
-   width: 320px;
-   height: 300px;
+.image-container {
+    position: relative;
 }
 
-.image-overlay{
+.image-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0 , 255, 248, 0.5);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: rgba(0, 255, 248, 0.5);
     opacity: 0;
     border-radius: 10px;
 }
 
-.image-overlay img{
+.image-overlay img {
     width: 50px;
 }
 
-.image-container:hover .image-overlay{
+.image-container:hover .image-overlay {
     opacity: 1;
 }
 
 .main-image {
-    width: 320px;
-    /* width: 100%; */
+    width: 100%;
     height: 300px;
     border-radius: 10px;
 }
@@ -67,52 +61,47 @@ section {
 h1 {
     font-size: 25px;
     line-height: 1;
+    margin-bottom: .5rem;
 }
 
 p {
     letter-spacing: 1px;
-    width: 320px;
+    width: 100%;
     color: lightgray;
 }
 
 .offer-time-left {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 1rem;
-
-    box-shadow: 0 .5px 0 0 grey;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
 }
 
 .eth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: .5rem;
     font-weight: bold;
     color: #00FFF8;
 }
 
 .days-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: .5rem;
     color: #8BACD9;
 }
 
 .profile {
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
     gap: 1rem;
     color: lightgray;
+    width: 100%;
 }
 
 .profile-image {
     width: 50px;
 }
 
-strong{
+.profile-image>p {
+    display: block;
+}
+
+span {
     color: white;
 }
